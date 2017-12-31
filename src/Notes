@@ -1,0 +1,26 @@
+
+// Formulas 
+// C to F
+// C = (F-32) * (5/9)
+
+// F to C
+// F = C * (9/5) + 32
+
+fn main() {
+    let fahrenheit = c2f(0);
+    println!("C2F: {}", fahrenheit);
+    let celsius = f2c(0);
+    println!("F2C: {}", celsius);
+}
+
+// Conavert Celsius to Fahrenheit 
+fn c2f(degree: i16) -> i16{
+    let resualts = degree * (9/5) + 32;
+    resualts
+}
+
+// Converts Fahrenheit  to Celsius
+fn f2c(degree: i16) -> i16{
+    let resualts = (degree - 32) * (5/9);
+    resualts
+}
